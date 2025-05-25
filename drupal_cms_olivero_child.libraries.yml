@@ -1,0 +1,12 @@
+global-styling:
+  css:
+    theme:
+      css/overrides.css: {}
+      css/dark/variables.css: {}
+      css/dark/base.css: {}
+      css/dark/layout.css: {}
+      css/dark/header.css: {}
+      css/dark/navigation.css: {}
+      css/dark/card.css: {}
+      css/dark/block.css: {}
+      css/dark/text-content.css: {}

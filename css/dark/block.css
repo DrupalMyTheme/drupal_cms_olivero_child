@@ -1,0 +1,14 @@
+/**
+ * Dark theme: block titles.
+ */
+@media (prefers-color-scheme: dark) {
+h2.block__title,
+.block__title {
+  color: var(--color-text-neutral-loud) !important;
+}
+
+.site-footer h2.block__title,
+.site-footer .block__title {
+  color: var(--color-text-neutral-medium) !important;
+}
+}

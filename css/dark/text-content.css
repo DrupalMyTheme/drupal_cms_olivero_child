@@ -1,0 +1,50 @@
+/**
+ * Dark theme: .text-content, ckeditor, code blocks, quotes
+ */
+@media (prefers-color-scheme: dark) {
+.text-content,
+.cke_editable {
+  color: var(--color-text-neutral-medium);
+}
+
+.text-content a:where(:not(.button)),
+.cke_editable a:where(:not(.button)) {
+  color: var(--color-text-primary-medium);
+  box-shadow: inset 0 -2px 0 0 var(--color--primary-50);
+  text-decoration-color: currentColor;
+}
+
+.text-content a:where(:not(.button)):hover,
+.cke_editable a:where(:not(.button)):hover {
+  color: var(--color--primary-80);
+  box-shadow: inset 0 -2em 0 0 var(--color--primary-80);
+  text-decoration-color: var(--color--primary-80);
+}
+
+.text-content code,
+.cke_editable code {
+  background-color: var(--color--gray-200);
+  color: var(--color-text-neutral-loud);
+}
+
+.text-content pre code,
+.cke_editable pre code {
+  background-color: var(--color--gray-200);
+  color: var(--color-text-neutral-medium);
+}
+
+.text-content blockquote,
+.cke_editable blockquote {
+  color: var(--color-text-neutral-medium);
+}
+
+.text-content blockquote::before,
+.cke_editable blockquote::before {
+  color: var(--color--primary-60);
+}
+
+.text-content blockquote::after,
+.cke_editable blockquote::after {
+  background: var(--color--gray-200);
+}
+}

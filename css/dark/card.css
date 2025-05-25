@@ -1,0 +1,32 @@
+/**
+ * Dark theme: card components.
+ */
+@media (prefers-color-scheme: dark) {
+.card {
+  background-color: var(--color--gray-100);
+  color: var(--color-text-neutral-medium);
+}
+
+.card:has(.card__cta-icon):hover {
+  background-color: var(--color--gray-200);
+  box-shadow: 0 0 27px rgba(0, 0, 0, 0.3);
+}
+
+.card__pretitle,
+.card__title,
+.card__title a {
+  color: var(--color-text-neutral-loud);
+}
+
+.card__subtitle {
+  color: var(--color-text-neutral-medium);
+}
+
+.card__title a:hover {
+  color: var(--color-text-primary-medium);
+}
+
+.card__cta-icon:after {
+  background-color: var(--color-text-neutral-loud);
+}
+}

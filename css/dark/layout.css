@@ -1,0 +1,20 @@
+/**
+ * Dark theme: page layout regions.
+ */
+@media (prefers-color-scheme: dark) {
+main,
+.layout-main-wrapper,
+.region-content,
+.page-content {
+  background-color: var(--color--gray-100);
+  color: var(--color-text-neutral-medium);
+}
+
+header,
+.region-header,
+.toolbar,
+.site-branding {
+  background-color: var(--color--gray-200);
+  color: var(--color-text-neutral-loud);
+}
+}

@@ -1,0 +1,18 @@
+/**
+ * Dark theme: custom properties overrides.
+ */
+@media (prefers-color-scheme: dark) {
+:root {
+  --color--gray-100: hsl(201, 15%, 5%);
+  --color--gray-200: hsl(201, 15%, 11%);
+  --color--gray-70:  hsl(201, 15%, 72%);
+  --color--gray-88:  hsl(201, 15%, 88%);
+  --color--gray-95:  hsl(201, 15%, 95%);
+
+  --color-text-neutral-medium: var(--color--gray-88);
+  --color-text-neutral-loud: var(--color--gray-95);
+  --color-text-primary-medium: var(--color--primary-70);
+  --color-text-primary-loud: var(--color--primary-95);
+  --color-border: var(--color--gray-20);
+}
+}

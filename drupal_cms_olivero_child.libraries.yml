@@ -10,3 +10,5 @@ global-styling:
       css/dark/card.css: {}
       css/dark/block.css: {}
       css/dark/text-content.css: {}
+      css/dark/tabs.css: {}
+      css/dark/form-text.css: {}

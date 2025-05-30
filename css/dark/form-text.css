@@ -1,0 +1,154 @@
+@media (prefers-color-scheme: dark) {
+  [type="color"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="email"],
+  [type="file"],
+  [type="month"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="time"],
+  [type="url"],
+  [type="week"],
+  textarea {
+    background-color: var(--color--gray-200) !important;
+    color: var(--color-text-neutral-medium) !important;
+    border-color: var(--color--gray-60) !important;
+  }
+
+  /* フォーカス時 */
+  :is(
+    [type="color"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    textarea
+  ):focus {
+    border: solid 2px var(--color--primary-60) !important;
+    outline: solid 2px var(--color--primary-60) !important;
+  }
+
+  /* サポートされていればダブルアウトライン */
+  @supports (outline-style: double) {
+    :is(
+      [type="color"],
+      [type="date"],
+      [type="datetime-local"],
+      [type="email"],
+      [type="file"],
+      [type="month"],
+      [type="number"],
+      [type="password"],
+      [type="search"],
+      [type="tel"],
+      [type="text"],
+      [type="time"],
+      [type="url"],
+      [type="week"],
+      textarea
+    ):focus {
+      border-width: 1px !important;
+      outline-width: 6px !important;
+      outline-style: double !important;
+      outline-offset: -1px !important;
+    }
+  }
+
+  /* disabled 状態 */
+  [disabled]:is(
+    [type="color"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    textarea
+  ) {
+    color: var(--color--gray-70) !important;
+    background-color: var(--color--gray-100) !important;
+  }
+
+  /* エラー表示時 */
+  .error:is(
+    [type="color"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    textarea
+  ) {
+    border: solid 2px var(--color--red) !important;
+  }
+
+  .error:is(
+    [type="color"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    textarea
+  ):focus {
+    outline-color: var(--color--red) !important;
+    outline-offset: -2px !important;
+  }
+
+  /* CKEditor のエラー枠も対応 */
+  .error:is(
+    [type="color"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    textarea
+  ) + .ck-editor > .ck-editor__main {
+    border: solid 2px var(--color--red) !important;
+  }
+}

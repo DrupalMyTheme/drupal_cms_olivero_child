@@ -1,7 +1,7 @@
 name: 'Drupal CMS Olivero Child'
 type: theme
 base theme: drupal_cms_olivero
-description: 'Sub-theme of Drupal CMS Olivero for custom <code> and <blockquote>'
+description: 'Sub-theme for the Drupal CMS Olivero in dark mode'
 core_version_requirement: ^11
 libraries:
   - drupal_cms_olivero_child/global-styling

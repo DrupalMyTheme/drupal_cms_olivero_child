@@ -3,7 +3,6 @@
  */
 @media (prefers-color-scheme: dark) {
   main,
-  .layout-main-wrapper,
   .region-content,
   .page-content {
     background-color: var(--color--gray-100);
@@ -16,5 +15,39 @@
   .site-branding {
     background-color: var(--color--gray-200);
     color: var(--color-text-neutral-loud);
+  }
+
+
+  /* ページ背景（全体ラッパー） */
+  .page-wrapper {
+    background: var(--color--gray-100) !important;
+  }
+
+  /* メイン構造の背景色 */
+  .layout-main-wrapper {
+    background-color: var(--color--gray-100) !important;
+    color: var(--color-text-neutral-medium) !important;
+  }
+
+  /* メインコンテンツ（明示的に指定） */
+  .main-content {
+    background-color: var(--color--gray-100) !important;
+    color: var(--color-text-neutral-medium) !important;
+  }
+
+  .main-content__container {
+    background-color: inherit !important;
+    color: inherit !important;
+  }
+
+  /* コンテナ内要素が白背景で上書きされていた場合の保険 */
+  .container {
+    background-color: transparent !important;
+    color: var(--color-text-neutral-medium) !important;
+  }
+
+  /* コンテキストリンク要素も必要であれば色調整可能 */
+  [data-contextual-id]:not(.contextual) {
+    background-color: var(--color--gray-200) !important;
   }
 }

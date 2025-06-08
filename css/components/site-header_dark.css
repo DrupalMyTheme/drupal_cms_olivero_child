@@ -17,11 +17,6 @@
     background-color: transparent;
   }
 
-  .site-header__inner a:hover,
-  .site-header__inner a:focus {
-    color: var(--color-text-primary-medium);
-  }
-
   @media (min-width: 75rem) {
     .site-header__fixable.is-expanded .site-header__inner {
       box-shadow: -36px 1px 36px rgba(0, 0, 0, 0.25);

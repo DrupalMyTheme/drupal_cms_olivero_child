@@ -1,6 +1,5 @@
 @media (prefers-color-scheme: dark) {
-  .site-header__initial,
-  .site-header__fixable {
+  .site-header__initial {
     background-color: var(--color--primary-40);
     color: var(--color-text-neutral-loud);
   }

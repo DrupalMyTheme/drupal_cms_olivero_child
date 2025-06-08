@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  .block__content {
+    background-color: var(--color--gray-1);
+  }
+
+  .block.block-views.block-views-blocklatest-latest h2.block__title {
+    color: var(--color-text-neutral-loud) ;
+    background-color: var(--color--gray-1);
+  }
+}

@@ -1,14 +1,11 @@
-/**
- * Dark theme: card components.
- */
 @media (prefers-color-scheme: dark) {
   .card {
-    background-color: var(--color--gray-100);
+    background-color: var(--color--gray-5);
     color: var(--color-text-neutral-medium);
   }
 
   .card:has(.card__cta-icon):hover {
-    background-color: var(--color--gray-200);
+    background-color: var(--color--gray-20);
     box-shadow: 0 0 27px rgba(0, 0, 0, 0.3);
   }
 

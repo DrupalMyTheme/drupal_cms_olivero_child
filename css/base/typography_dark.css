@@ -1,0 +1,14 @@
+@media (prefers-color-scheme: dark) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color--gray-100); /* より明るく見える白寄りの色 */
+  }
+
+  ul {
+    color: var(--color--gray-95);
+  }
+}

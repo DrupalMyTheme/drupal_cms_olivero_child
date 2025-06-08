@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* グレースケール（暗い背景に調整） */
+
+    --color--gray-1:  hsl(var(--color--gray-hue), var(--color--gray-saturation), 1%); /* 暗いグレー＝背景向け */
+    --color--gray-5:  hsl(var(--color--gray-hue), var(--color--gray-saturation), 5%);
+    --color--gray-10: hsl(var(--color--gray-hue), var(--color--gray-saturation), 10%);
+    --color--gray-20: hsl(var(--color--gray-hue), var(--color--gray-saturation), 15%);
+    --color--gray-30: hsl(var(--color--gray-hue), var(--color--gray-saturation), 20%);
+    --color--gray-40: hsl(var(--color--gray-hue), var(--color--gray-saturation), 30%);
+    --color--gray-50: hsl(var(--color--gray-hue), var(--color--gray-saturation), 40%);
+    --color--gray-60: hsl(var(--color--gray-hue), var(--color--gray-saturation), 50%);
+    --color--gray-70: hsl(var(--color--gray-hue), var(--color--gray-saturation), 60%);
+    --color--gray-80: hsl(var(--color--gray-hue), var(--color--gray-saturation), 70%);
+    --color--gray-90: hsl(var(--color--gray-hue), var(--color--gray-saturation), 85%);
+    --color--gray-95: hsl(var(--color--gray-hue), var(--color--gray-saturation), 95%);
+    --color--gray-100: hsl(var(--color--gray-hue), var(--color--gray-saturation), 100%); /* 明るいグレー＝テキスト向け */
+
+    /* テキストカラー（暗い背景に対して明るく） */
+    --color-text-neutral-soft: var(--color--gray-70);
+    --color-text-neutral-medium: var(--color--gray-90);
+    --color-text-neutral-loud: var(--color--gray-95);
+
+    --color-text-primary-medium: var(--color--primary-60);
+    --color-text-primary-loud: var(--color--primary-50);
+  }
+}

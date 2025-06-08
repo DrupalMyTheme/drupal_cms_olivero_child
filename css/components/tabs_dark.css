@@ -1,0 +1,40 @@
+@media (prefers-color-scheme: dark) {
+  .tabs-wrapper .tabs {
+    --tabs-text-color: var(--color-text-neutral-soft); 
+    --tabs-text-color-active: var(--color-text-neutral-loud); 
+    --tabs-background-color: var(--color--gray-5);
+    --tabs-background-color-hover: var(--color--gray-30);
+    --tabs-border-color: var(--color--gray-70);
+  }
+
+  .tabs__link {
+    color: var(--tabs-text-color);
+    border: var(--tabs-border-width) solid var(--tabs-border-color);
+    background-color: var(--tabs-background-color);
+  }
+
+  .tabs__link:hover {
+    color: var(--tabs-text-color-active);
+    background-color: var(--tabs-background-color-hover);
+  }
+
+  .tabs__link.is-active {
+    color: var(--tabs-text-color-active);
+  }
+
+  @media (min-width: 43.75rem) {
+    .tabs--secondary .tabs__link {
+      border-color: transparent;
+      background-color: transparent;
+    }
+  }
+
+  .tabs__trigger {
+    background-color: var(--tabs-background-color);
+  }
+
+  .tabs__trigger:hover {
+    background-color: var(--tabs-background-color-hover);
+  }
+
+}

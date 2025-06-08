@@ -1,0 +1,9 @@
+@media (prefers-color-scheme: dark) {
+  .field--tags__label {
+    color: var(--color-text-neutral-soft);
+  }
+
+  .field--tags {
+    background-color: transparent  !important;
+  }
+}

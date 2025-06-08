@@ -1,0 +1,60 @@
+@media (prefers-color-scheme: dark) {
+  .text-content {
+    color: var(--color-text-neutral-loud);
+  }
+
+  .text-content a:where(:not(.button)) {
+    color: var(--color-text-neutral-loud);
+  }
+
+  @supports (box-shadow: none) {
+    .text-content a:where(:not(.button)) {
+      box-shadow: inset 0 -2px 0 0 var(--color--primary-50);
+    }
+
+    .text-content a:where(:not(.button)):hover {
+      color: var(--color--gray-1);
+      box-shadow: inset 0 -2em 0 0 var(--color--primary-60);
+      text-decoration-color: var(--color--primary-50);
+    }
+  }
+
+  .text-content code {
+    color: var(--color--gray-90);
+    background-color: var(--color--gray-1);
+  }
+
+  .text-content pre code {
+    color: var(--color--gray-90);
+    background-color: var(--color--gray-30);
+  }
+
+  .text-content blockquote::before {
+    color: var(--color--primary-60);
+  }
+
+  .text-content blockquote::after {
+    background: var(--color--gray-1);
+  }
+}
+
+.text-content blockquote {
+  font-style: italic;
+}
+
+@media (min-width: 43.75rem) {
+  .text-content blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: var(--sp2);
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .text-content blockquote {
+    font-size: 1.85rem;
+    font-style: italic;
+    line-height: var(--sp2);
+    background-color: var(--color--gray-5);
+  }
+}

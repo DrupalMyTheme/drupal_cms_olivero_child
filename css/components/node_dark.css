@@ -1,0 +1,6 @@
+@media (prefers-color-scheme: dark) {
+  .node--unpublished {
+    /* There is no variable for the color - #fff4f4. */
+    background-color: transparent;
+  }
+}

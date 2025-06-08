@@ -1,14 +1,20 @@
 global-styling:
   css:
     theme:
-      css/overrides.css: {}
-      css/dark/variables.css: {}
-      css/dark/base.css: {}
-      css/dark/layout.css: {}
-      css/dark/header.css: {}
-      css/dark/navigation.css: {}
-      css/dark/card.css: {}
-      css/dark/block.css: {}
-      css/dark/text-content.css: {}
-      css/dark/tabs.css: {}
-      css/dark/form-text.css: {}
+      css/base/base_dark.css: {}
+      css/base/typography_dark.css: {}
+      css/base/variables_dark.css: {}
+      css/components/block_dark.css: {}
+      css/components/card_dark.css: {}
+      css/components/form_dark.css: {}
+      css/components/header-navigation_dark.css: {}
+      css/components/node_dark.css: {}
+      css/components/site-header_dark.css: {}
+      css/components/tabs_dark.css: {}
+      css/components/tags_dark.css: {}
+      css/components/text-content_dark.css: {}
+      css/components/navigation/nav-primary_dark.css: {}
+      css/layout/social-bar_dark.css: {}
+      css/layout/layout_dark.css: {}
+  dependencies:
+    - drupal_cms_olivero/global-styling

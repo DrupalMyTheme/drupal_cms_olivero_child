@@ -3,9 +3,9 @@
  */
 @media (prefers-color-scheme: dark) {
   .header-nav {
-    background-color: var(--color--gray-200);
+    background-color: var(--color--gray-1);
     color: var(--color-text-neutral-medium);
-    border-block-start: solid var(--color--gray-100) calc(var(--sp3) + var(--drupal-displace-offset-top, 0px));
+    border-block-start: solid var(--color--gray-1) calc(var(--sp3) + var(--drupal-displace-offset-top, 0px));
     box-shadow: 0 0 72px rgba(0, 0, 0, 0.3);
   }
 
@@ -16,7 +16,7 @@
     }
 
     body.is-always-mobile-nav .header-nav {
-      background-color: var(--color--gray-200);
+      background-color: var(--color--gray-1);
       box-shadow: 0 0 72px rgba(0, 0, 0, 0.3);
     }
   }
@@ -40,7 +40,7 @@
   /* Primary nav submenu (level-2) */
   nav .primary-nav__menu--level-2,
   .primary-nav__menu--level-2.is-active-menu-parent {
-    background-color: var(--color--gray-200) !important;
+    background-color: var(--color--gray-1) !important;
     color: var(--color-text-neutral-medium);
   }
 
@@ -57,7 +57,7 @@
 
  body:not(.is-always-mobile-nav) .primary-nav__button-toggle .icon--menu-toggle {
   /*  background-color: var(--color--gray-45) !important; */
-    background-color: var(--color--gray-200) !important;
+    background-color: var(--color--gray-1) !important;
   }
 
   body:not(.is-always-mobile-nav) .primary-nav__button-toggle .icon--menu-toggle::after {

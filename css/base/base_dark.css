@@ -1,0 +1,7 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--color--gray-100); /* 明るめの文字色 */
+    background-color: var(--color--gray-1); /* 濃いグレー背景 */
+    background-image: none; /* 必要に応じて背景画像を削除可能 */
+  }
+}

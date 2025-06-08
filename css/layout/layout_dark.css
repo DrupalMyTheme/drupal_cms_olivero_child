@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: dark) {
+  .site-header,
+  .page-wrapper,
+  .container, 
+  .layout-main-wrapper {
+    background-color: var(--color--gray-1);
+  }
+
+  body.is-fixed .container {
+    background-color: var(--color--gray-1);
+  }
+
+  /* コンテキストリンクなどが黒背景で見えなくなるのを防止 */
+  [data-contextual-id]:not(.contextual) {
+    background-color: var(--color--gray-20);
+  }
+}

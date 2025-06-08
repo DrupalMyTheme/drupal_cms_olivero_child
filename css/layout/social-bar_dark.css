@@ -1,0 +1,6 @@
+@media (prefers-color-scheme: dark) {
+  .social-bar {
+    background-color: var(--color--gray-1);
+  }
+}
+

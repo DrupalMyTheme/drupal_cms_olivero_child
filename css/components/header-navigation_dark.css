@@ -26,8 +26,6 @@
     color: var(--color-text-neutral-loud);
   }
 
-  .header-nav a:hover,
-  .header-nav a:focus,
   .header-nav button:hover {
     color: var(--color-text-primary-medium);
   }
